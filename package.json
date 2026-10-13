@@ -1,0 +1,25 @@
+{
+  "name": "switch-generator",
+  "displayName": "Switch Generator",
+  "description": "Создаёт switch с нужными case",
+  "version": "1.0.0",
+  "publisher": "khokhlov",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "https://github.com/Cxntrxxxl/switch-generator" },
+  "engines": { "vscode": "^1.90.0" },
+  "main": "./extension.js",
+  "activationEvents": [],
+  "contributes": {
+    "commands": [
+      { "command": "switchGen.generate", "title": "Создать switch-case" }
+    ],
+    "keybindings": [
+      {
+        "command": "switchGen.generate",
+        "key": "ctrl+alt+e",
+        "mac": "cmd+alt+e",
+        "when": "editorTextFocus"
+      }
+    ]
+  }
+}
